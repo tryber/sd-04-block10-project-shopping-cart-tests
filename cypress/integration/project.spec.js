@@ -45,6 +45,7 @@ describe('Shopping Cart Project', () => {
   })
 
   beforeEach(() => {
+    cy.wait(1000);
     cy.get(EMPTY_CART_BUTTON)
       .click()
     cy.clearLocalStorage();
